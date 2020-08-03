@@ -1,0 +1,43 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+//start header
+.header {
+	background-color: rgba(0, 0, 0, .2);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 85px;
+	}
+
+	&__menu {
+		display: flex;
+		height: 100%;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		padding: 0 14px;
+		color: #fff;
+
+		&.active {
+			background-color: #004af2;
+		}
+	}
+}
+//end header
+
+
+
+@import "media";
