@@ -42,6 +42,7 @@
 .intro {
 	background: #000 url('../images/intro-bg.jpg') no-repeat center;
 	background-size: cover;
+	margin-bottom: 30px;
 
 	&__inner {
 		display: flex;
@@ -88,6 +89,90 @@
 }
 
 //end intro
+//start services
+.services {
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 30px 0 70px;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+		position: relative;
+	}
 
+	&__main-title {
+		font-size: 90px;
+		line-height: 1;
+		color: rgba(44, 44, 44, 0.05);
+		font-weight: 700;
+		position: absolute;
+		bottom: 12px;
+		right: 30px;
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	&__item {
+		max-width: 25%;
+		padding: 0 25px;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	&__title {
+		font-size: 24px;
+		color: #2c2c2c;
+		font-weight: normal;
+		line-height: 1.2;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		line-height: 21px;
+		margin-bottom: 20px;
+	}
+
+	&__footer {
+		margin-top: auto;
+
+	}
+
+	&__link {
+		color: #004af2;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 21px;
+		position: relative;
+		padding-bottom: 10px;
+		transition: color .3s linear;
+
+		&:hover {
+			color: #ff3e2f;
+		}
+
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 10px;
+			height: 2px;
+			background: #004af2;
+			transition: width .3s linear;
+			margin-top: 5px;
+		}
+
+		&:hover::after {
+			width: 100%;
+			background: #ff3e2f;
+
+		}
+	}
+}
+
+//end services
 
 @import "media";
