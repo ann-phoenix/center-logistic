@@ -30,47 +30,159 @@ h6 {
 }
 
 li,
-ul{
+ul {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
 
 button:focus,
 input:focus {
   outline: transparent;
 }
 
-.container{
+.container {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-body{
-	font-family: 'PT Sans', sans-serif;
-	font-weight: 400;
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 1.5;
-	color: #585858;
-	background: #e5e5e5;
+  color: #585858;
+  background: #e5e5e5;
 }
 
-#modal{
+#modal {
   display: none;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   overflow-x: hidden;
 }
+
 .content {
-	flex: 1 0 auto;
+  flex: 1 0 auto;
 }
+
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.form {
+  background: #004af2;
+  max-width: 400px;
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__header {
+    padding: 30px 20px;
+    background-color: #033fc9;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  &__content {
+    margin: 25px 30px 0;
+  }
+
+  &__group {
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+    padding-bottom: 11px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #fff;
+    transition: border-bottom-color .3s linear;
+    padding-left: 50px;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      border-bottom-color: #fff;
+    }
+  }
+
+  .input--user {
+    background: url('../images/user.svg') left 15px top 5px no-repeat;
+  }
+
+  .input--phone {
+    background: url('../images/phone.svg') left 15px top 5px no-repeat;
+  }
+
+  .input--mail {
+    background: url('../images/mail.svg') left 15px top 5px no-repeat;
+    margin-bottom: 35px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #333;
+  border-radius: 5px;
+  border: none;
+  padding: 11px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+
+  &--orange {
+    background: linear-gradient(90deg, #ff903e 0%,
+    #ff2c2c 100%);
+  }
+  &--block{
+    display: block;
+    width: 100%;
+  }
 }

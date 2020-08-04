@@ -36,8 +36,58 @@
 		}
 	}
 }
-//end header
 
+//end header
+//start intro
+.intro {
+	background: #000 url('../images/intro-bg.jpg') no-repeat center;
+	background-size: cover;
+
+	&__inner {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		height: 600px;
+	}
+
+
+	&__text {
+		text-align: right;
+		margin-bottom: 52px;
+	}
+
+	&__countries {
+		line-height: 21px;
+		color: #fff;
+	}
+
+	&__title {
+		font-size: 110px;
+		line-height: .9;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		position: relative;
+		color: rgba(225, 225, 225, .8);
+
+		&-amp {
+			font-size: 170px;
+			font-weight: 900;
+			line-height: 1;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			color: rgba(255, 255, 255, 0.2);
+		}
+	}
+}
+
+.form--intro {
+	position: relative;
+	bottom: -30px;
+}
+
+//end intro
 
 
 @import "media";
