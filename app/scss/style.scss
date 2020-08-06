@@ -226,9 +226,10 @@
 		background: url('../images/clients/clients-heart.svg') no-repeat left 30px top;
 	}
 
-	&__items{
+	&__items {
 		position: relative;
-		&::after{
+
+		&::after {
 			position: absolute;
 			display: block;
 			width: 92px;
@@ -240,6 +241,7 @@
 			z-index: 0;
 		}
 	}
+
 	&__item-header {
 		margin-bottom: 30px;
 		color: #2c2c2c;
@@ -247,7 +249,7 @@
 		align-items: center;
 	}
 
-	&__item-box{
+	&__item-box {
 		padding-left: 20px;
 		flex-grow: 1;
 	}
@@ -266,13 +268,15 @@
 		line-height: 22px;
 		font-weight: 700;
 	}
-	&__company{
+
+	&__company {
 		text-transform: uppercase;
 	}
 
-	&__item-text{
+	&__item-text {
 		margin-bottom: 20px;
-		&::first-line{
+
+		&::first-line {
 			text-indent: 10px;
 		}
 	}
@@ -283,5 +287,65 @@
 }
 
 //end clients
+//start benefits
+.benefits {
+	&__inner {
+		display: flex;
+	}
+
+	&__col {
+		width: 50%;
+	}
+
+	&__list {
+		max-width: 370px;
+		width: 100%;
+		padding-left: 50px;
+		background-image: linear-gradient(to bottom, #fff 40%, #a5a5a5 40%);
+		background-size: 2px 35px;
+		background-repeat: repeat-y;
+		background-position: left 12px top -4px;
+		position: relative;
+
+		&::after,
+		&::before {
+			content: '';
+			position: absolute;
+			width: 26px;
+			height: 36px;
+			display: block;
+			left: 0;
+			z-index: 1;
+			background-repeat: no-repeat;
+			background-color: #fff;
+		}
+
+		&::before {
+			background-image: url('../images/start.svg');
+			top: -5px;
+
+		}
+
+		&::after {
+			background-image: url('../images/finish.svg');
+			bottom: -5px;
+		}
+	}
+
+	&__list-item:not(:last-child) {
+		margin-bottom: 35px;
+	}
+
+	&__list-title {
+		font-size: 21px;
+		line-height: 1.2;
+		color: #2c2c2c;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+
+}
+
+//end benefits
 
 @import "media";
