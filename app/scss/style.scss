@@ -174,5 +174,114 @@
 }
 
 //end services
+//start clients
+.clients {
+	&__title {
+		font-weight: 700;
+		font-size: 45px;
+		line-height: 54px;
+		margin-bottom: 40px;
+
+		span {
+			color: #004AF2;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		width: 60%;
+		margin-bottom: 60px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__item {
+		margin-right: 40px;
+		margin-bottom: 40px;
+	}
+
+	&__slider {
+		width: 40%;
+	}
+
+	&__btn {
+		box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+	}
+
+	&__love {
+		min-height: 47px;
+		font-size: 18px;
+		line-height: 23px;
+		display: inline-block;
+		margin-left: 40px;
+		padding-top: 5px;
+		background: url('../images/clients/clients-heart.svg') no-repeat left 30px top;
+	}
+
+	&__items{
+		position: relative;
+		&::after{
+			position: absolute;
+			display: block;
+			width: 92px;
+			height: 126px;
+			content: '';
+			background: url('../images/clients/lines.svg')no-repeat;
+			top: -15px;
+			left: 0;
+			z-index: 0;
+		}
+	}
+	&__item-header {
+		margin-bottom: 30px;
+		color: #2c2c2c;
+		display: flex;
+		align-items: center;
+	}
+
+	&__item-box{
+		padding-left: 20px;
+		flex-grow: 1;
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		border: 5px solid #fff;
+		box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+		z-index: 1;
+	}
+
+	&__name {
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 700;
+	}
+	&__company{
+		text-transform: uppercase;
+	}
+
+	&__item-text{
+		margin-bottom: 20px;
+		&::first-line{
+			text-indent: 10px;
+		}
+	}
+}
+
+.clients--map {
+	background: url('../images/clients/clients-map.svg') no-repeat left 35px top 130px;
+}
+
+//end clients
 
 @import "media";
