@@ -321,7 +321,7 @@
 
 		&::after {
 			background-image: url('../images/finish.svg');
-			bottom: -5px;
+			bottom: -20px
 		}
 	}
 
@@ -404,5 +404,57 @@
 
 //end team
 //start mission
+.mission {
+	&__title-main {
+		font-size: 90px;
+		line-height: 1;
+		color: rgba(0, 0, 0, 0.05);
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__inner {
+		padding: 60px 30px;
+		box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.16);
+		border-radius: 5px;
+		text-align: center;
+		margin-bottom: 30px;
+		position: relative;
+		margin-top: -23px;
+		&:after,
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			width: 41.66666%;
+			height: 2px;
+		}
+
+		&:before {
+			background-color: #004af2;
+			right: 50%;
+		}
+
+		&:after {
+			background-color: #fc2c2b;
+			left: 50%;
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: #004af2;
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		font-size: 21px;
+		line-height: 25px;
+	}
+}
+
 //end mission
 @import "media";
