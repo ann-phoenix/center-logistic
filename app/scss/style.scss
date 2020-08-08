@@ -177,14 +177,7 @@
 //start clients
 .clients {
 	&__title {
-		font-weight: 700;
-		font-size: 45px;
-		line-height: 54px;
 		margin-bottom: 40px;
-
-		span {
-			color: #004AF2;
-		}
 	}
 
 	&__inner {
@@ -347,5 +340,69 @@
 }
 
 //end benefits
+//start team
+.team {
+	&__title {
+		margin-bottom: 50px;
+	}
 
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	&__col {
+		padding: 0 15px;
+		width: 33.33333%;
+		margin-bottom: 30px;
+
+	}
+
+
+	&__img {
+		background: #c4c4c4;
+		box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16);
+		margin-bottom: 15px;
+	}
+
+
+	&__name {
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: #2c2c2c;
+		margin-bottom: 5px;
+	}
+
+	&__career,
+	&__link {
+		color: #585858;
+	}
+
+	&__career {
+		margin-bottom: 11px;
+	}
+
+	&__contacts-icon {
+		width: 16px;
+		height: auto;
+		margin-right: 7px;
+	}
+
+	&__link {
+		font-size: 15px;
+		line-height: 1.2;
+		margin-bottom: 14px;
+		display: inline-block;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+//end team
+//start mission
+//end mission
 @import "media";

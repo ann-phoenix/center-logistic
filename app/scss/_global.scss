@@ -178,20 +178,35 @@ body {
 
   &--orange {
     background: linear-gradient(90deg, #ff903e 0%,
-    #ff2c2c 100%);
+        #ff2c2c 100%);
   }
-  &--block{
+
+  &--block {
     display: block;
     width: 100%;
   }
 }
 
-.section{
+.section {
   padding: 60px 0;
 }
 
-.img{
+.section--gray {
+	background: #e5e5e5;
+}
+
+.img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+
+  span {
+    color: #004AF2;
+  }
 }
