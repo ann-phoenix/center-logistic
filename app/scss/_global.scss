@@ -69,14 +69,14 @@ body {
   background: #fff;
 }
 
-.text-center{
+// body.no-scroll{
+// overflow: hidden;
+// }
+
+.text-center {
   text-align: center;
 }
 
-
-#modal {
-  display: none;
-}
 
 .wrapper {
   display: flex;
@@ -93,8 +93,30 @@ body {
   flex: 0 0 auto;
 }
 
-.logo {
-  cursor: pointer;
+
+
+.section {
+  padding: 60px 0;
+}
+
+.section--gray {
+  background: #e5e5e5;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+
+  span {
+    color: #004AF2;
+  }
 }
 
 .form {
@@ -166,6 +188,38 @@ body {
   }
 }
 
+.input--dark {
+  color: #2c2c2c;
+  border-bottom-color: #e8e8e8;
+
+  &::placeholder {
+    color: #2c2c2c;
+  }
+
+  &:focus {
+    border-bottom-color: #000;
+  }
+
+  &.input--user,
+  &.input--mail,
+  &.input--phone {
+    background-position: 15px 6px;
+    background-repeat: no-repeat;
+  }
+
+  &.input--user{
+    background-image: url('../images/user-black.svg');
+  }
+  &.input--phone{
+    background-image: url('../images/phone-black.svg')
+  ;
+  }
+  &.input--mail{
+    background-image: url('../images/mail-black.svg')
+  ;
+  }
+}
+
 .btn {
   display: inline-block;
   font-size: 18px;
@@ -183,27 +237,28 @@ body {
   position: relative;
 
   &:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: blue;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: opacity .1s linear;
-}
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity .1s linear;
+  }
 
-&:hover:before {
-  opacity: .10;
-}
+  &:hover:before {
+    opacity: .10;
+  }
 
-span {
-  position: relative;
-  z-index: 2;
-}
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
   &--orange {
     background: linear-gradient(90deg, #ff903e 0%, #ff2c2c 100%);
   }
@@ -212,31 +267,8 @@ span {
     display: block;
     width: 100%;
   }
-  &--shadow{
+
+  &--shadow {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-  }
-}
-
-.section {
-  padding: 60px 0;
-}
-
-.section--gray {
-	background: #e5e5e5;
-}
-
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 54px;
-
-  span {
-    color: #004AF2;
   }
 }
