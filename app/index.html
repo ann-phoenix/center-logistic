@@ -49,7 +49,7 @@
               <div class="form__group">
                 <input class="form__input input--mail" type="text" class="form__input" placeholder="Почта">
               </div>
-              <button class="form__btn btn btn--orange btn--block" type="submit">Жду звонка</button>
+              <button class="form__btn btn btn--orange btn--block" type="submit"> <span>Жду звонка</span></button>
             </form>
           </div>
         </div>
@@ -163,7 +163,7 @@
           </div>
         </div>
       </div>
-      <a class="clients__btn btn btn--orange" href="#">Стать нашим клиентом</a>
+      <button class="clients__btn btn btn--orange btn--shadow"> <span>Стать нашим клиентом</span></button>
       <span class="clients__love">мы любим наших клиентов</span>
     </div>
   </section>
@@ -267,11 +267,59 @@
         <h3 class="mission__title">Предоставлять квалифицированные услуги в сфере грузоперевозок</h3>
         <h4 class="mission__subtitle">Забронируйте доставку груза сейчас и ваша работа станет намного проще</h4>
       </div>
-       <div class="text-center">
-        <button class="mission__btn btn btn--orange" type="button">Стать клиентом</button> 
+      <div class="text-center">
+        <button class="mission__btn btn btn--orange btn--shadow" type="button"> <span>Стать клиентом</span></button>
       </div>
     </div>
   </section>
+  <!--news-->
+  <section class="news section">
+    <div class="container">
+      <h2 class="news__title-main title"><span>Наши</span> новости</h2>
+      <div class="news__inner">
+        <article class="news__item">
+          <h4 class="news__title"> <a href="#"> Новое направление перевозки сборных грузов!</a> </h4>
+          <div class="news__text">Уважаемые клиенты! Сообщаем Вам, что с 18.08.20 г. открывается новое направление
+            перевозки сборных грузов по направлению Кострома - Москва - Кострома. Выход машины из г. Москва и г. Кострома
+            каждые вторник и пятницу.</div>
+          <time class="news__date" pubdate="04-08-2020 18:00">04/08/2020</time>
+        </article>
+        <article class="news__item">
+          <h4 class="news__title"> <a href="#">Услуга "день в день"</a></h4>
+          <div class="news__text">Мы можем забрать груз у отправителя, доставить груз со склада
+            получателю в день оформления заявки. А также мы выполним погрузо-разгрузочные работы и упакуем ваш груз для
+            бережной перевозки без дополнительных наценок за срочность.
+          </div>
+          <time class="news__date" pubdate="30-07-2020 17:00" >30/07/2020</time>
+        </article>
+      </div>
+      <a class="news__link btn btn--orange btn--shadow" href="#"> <span>Читать блог</span> </a>
+    </div>
+  </section>
+  <!--footer-->
+  <footer class="footer section section--gray">
+    <div class="container">
+      <div class="footer__inner">
+        <img class="footer__logo" src="images/logo-black.svg" alt="">
+        <div class="footer__contacts">
+          <div class="footer__address">г. Москва, ул. Электрозаводская, д. 27</div>
+          <span class="footer__phone">
+            Позвоните нам:
+            <a class="footer__phone-link" href="tel:78002344595">+7 (800) 234 45 95</a>
+          </span>
+          <span class="footer__mail">
+            или напишите на почту:
+            <a class="footer__mail-link" href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+          </span>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Условия и положения</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Блог</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
