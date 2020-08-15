@@ -31,10 +31,19 @@
 		padding: 0 14px;
 		color: #fff;
 
+		&:not(.active):hover{
+			text-decoration: underline;
+		}
+
 		&.active {
 			background-color: #004af2;
 		}
 	}
+}
+
+.header--dark{
+	background-color: rgba(0, 0, 0, .8);
+
 }
 
 //end header
@@ -86,6 +95,12 @@
 .form--intro {
 	position: relative;
 	bottom: -30px;
+}
+
+.intro--blog {
+	height: 350px;
+	background: url('../images/blog-intro.jpg') no-repeat center;
+	background-size: cover;
 }
 
 //end intro
@@ -572,7 +587,8 @@
 		text-align: center;
 		margin-bottom: 20px;
 	}
-	&__icon{
+
+	&__icon {
 		margin-bottom: 10px;
 	}
 
@@ -632,10 +648,58 @@
 			transform: rotate(180deg);
 		}
 	}
-	&.show{
+
+	&.show {
 		display: flex;
 	}
 }
 
 //end modals
+
+
+//start main
+.main {
+
+	&-title {
+		margin-bottom: 50px;
+	}
+
+	&__inner {
+		display: flex;
+	}
+}
+
+.main__col {
+	width: 50%;
+
+	&-item {
+		margin-bottom: 50px;
+	}
+
+
+	&-title,
+	&-text {
+		margin-bottom: 15px;
+	}
+
+	&-title {
+		font-size: 18px;
+		line-height: 1.2;
+		color: #2c2c2c;
+		font-weight: 700;
+	}
+
+	&-text {
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&-date {
+		font-size: 12px;
+	}
+
+}
+
+//end main
 @import "media";

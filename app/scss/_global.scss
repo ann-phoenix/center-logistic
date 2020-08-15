@@ -2,6 +2,11 @@ html {
   box-sizing: border-box;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -119,6 +124,7 @@ body {
   }
 }
 
+
 .form {
   background: #004af2;
   max-width: 400px;
@@ -186,6 +192,11 @@ body {
     background: url('../images/mail.svg') left 15px top 5px no-repeat;
     margin-bottom: 35px;
   }
+}
+
+
+.form--right{
+  margin-left: auto;
 }
 
 .input--dark {
