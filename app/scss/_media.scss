@@ -1,0 +1,29 @@
+@media (max-width: 850px){
+.header__menu{
+	// display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	flex-direction: column;
+	background-color: rgba(0, 0, 0, .85);
+	height: auto;
+	min-height: calc(100vh - 50px);
+	padding-top: 8px;
+}
+.burger{
+	display: block;
+}
+.header__inner{
+	height: 50px;
+}
+
+.header__link{
+	display: block;
+	text-align: right;
+	padding: 10px 15px;
+}
+}
+

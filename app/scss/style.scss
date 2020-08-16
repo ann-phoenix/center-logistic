@@ -42,8 +42,14 @@
 }
 
 .header--dark {
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(0, 0, 0, .9);
 
+}
+.burger{
+	display: none;
+	padding: 0;
+	background: none;
+	border: 0;
 }
 
 //end header
