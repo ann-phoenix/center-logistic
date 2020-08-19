@@ -1,29 +1,131 @@
-@media (max-width: 850px){
-.header__menu{
-	// display: none;
-	position: absolute;
-	top: 100%;
-	right: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	flex-direction: column;
-	background-color: rgba(0, 0, 0, .85);
-	height: auto;
-	min-height: calc(100vh - 50px);
-	padding-top: 8px;
-}
-.burger{
-	display: block;
-}
-.header__inner{
-	height: 50px;
+@media (max-width: 991px) {
+	.title {
+		text-align: center;
+	}
+
+	//start services
+	.services__item {
+		max-width: 50%;
+	}
+
+	//start clients
+	.clients__inner {
+		flex-direction: column;
+		margin-bottom: 59px;
+	}
+
+	.clients--map{
+		background-position: left 35px top 130px;
+	}
+
+
+
+	.clients__logo,
+	.clients__slider {
+		width: 100%;
+	}
+
+	.clients__logo{
+		margin-top: 60px;
+	}
+
+	.clients__list {
+		justify-content: center;
+	}
+
+	.clients__item {
+		max-width: 130px;
+	}
 }
 
-.header__link{
-	display: block;
-	text-align: right;
-	padding: 10px 15px;
-}
+
+@media (max-width: 850px) {
+
+	//start header
+	.header__menu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		right: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		flex-direction: column;
+		background-color: rgba(0, 0, 0, .85);
+		height: auto;
+		min-height: calc(100vh - 50px);
+		padding-top: 8px;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.header__inner {
+		height: 50px;
+	}
+
+	.header__link {
+		display: block;
+		text-align: right;
+		padding: 10px 15px;
+	}
+
+	//start intro
+	.intro {
+		margin-bottom: 0;
+	}
+
+	.intro__inner {
+		height: auto;
+		padding-top: 75px;
+		padding-bottom: 25px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form--intro {
+		position: static;
+		order: 2;
+	}
+
+	.intro__text {
+		text-align: center;
+	}
+
+	.intro__title {
+		font-size: 90px;
+		margin-bottom: 25px;
+		order: 1;
+	}
+
+	//start services
+	.services__item {
+		max-width: 100%;
+	}
 }
 
+@media (max-width:575px) {
+	.section {
+		padding: 30px 0;
+	}
+
+	.title {
+		font-size: 35px;
+	}
+
+	.clients__list {
+		margin: 0 -15px;
+
+		.img {
+			margin: 0 auto;
+		}
+	}
+
+	.clients__item {
+		max-width: none;
+		width: 33.33333%;
+		margin-right: 0;
+		padding: 0 15px;
+	}
+}
