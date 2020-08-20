@@ -306,6 +306,9 @@
 //end clients
 //start benefits
 .benefits {
+	&__title{
+		margin-bottom: 50px;
+	}
 	&__inner {
 		display: flex;
 	}
@@ -492,8 +495,7 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
-		margin-bottom: 30px;
+		margin: 0 -15px 30px;
 
 	}
 
@@ -501,6 +503,7 @@
 		max-width: 500px;
 		width: 100%;
 		margin-bottom: 20px;
+		padding: 0 15px;
 	}
 
 	&__title {
@@ -523,7 +526,6 @@
 		margin-bottom: 15px;
 		font-size: 17px;
 	}
-
 	&__date {
 		font-size: 14px;
 		line-height: 1;

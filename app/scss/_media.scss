@@ -3,29 +3,27 @@
 		text-align: center;
 	}
 
-	//start services
+	//services
 	.services__item {
 		max-width: 50%;
 	}
 
-	//start clients
+	//clients
 	.clients__inner {
 		flex-direction: column;
 		margin-bottom: 59px;
 	}
 
-	.clients--map{
+	.clients--map {
 		background-position: left 35px top 130px;
 	}
-
-
 
 	.clients__logo,
 	.clients__slider {
 		width: 100%;
 	}
 
-	.clients__logo{
+	.clients__logo {
 		margin-top: 60px;
 	}
 
@@ -36,12 +34,17 @@
 	.clients__item {
 		max-width: 130px;
 	}
+
+	//footer
+	.footer {
+		background-size: 350px auto;
+	}
 }
 
 
 @media (max-width: 850px) {
 
-	//start header
+	//header
 	.header__menu {
 		display: none;
 		position: absolute;
@@ -71,7 +74,7 @@
 		padding: 10px 15px;
 	}
 
-	//start intro
+	//intro
 	.intro {
 		margin-bottom: 0;
 	}
@@ -99,9 +102,75 @@
 		order: 1;
 	}
 
-	//start services
+	//services
 	.services__item {
 		max-width: 100%;
+	}
+
+	//benefits
+	.benefits__inner {
+		flex-direction: column;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.benefits__col {
+		width: 100%;
+	}
+
+	.benefits__list {
+		margin-bottom: 50px;
+		max-width: none;
+	}
+
+	//team
+	.team__inner {
+		flex-direction: column;
+	}
+
+	.team__col {
+		width: 100%;
+	}
+
+	.team__col {
+		margin-bottom: 0;
+	}
+
+	.team__item {
+		max-width: 370px;
+		margin: 0 auto;
+	}
+
+	//mission
+	.mission__inner {
+		padding: 40px 20px;
+		margin-top: -16px;
+	}
+
+	.mission__title-main {
+		font-size: 70px;
+	}
+
+	.mission__title {
+		font-size: 24px;
+	}
+
+	.mission__subtitle {
+		font-size: 18px;
+	}
+
+	//news
+	.news__inner {
+		flex-wrap: wrap;
+	}
+
+	.news__item {
+		max-width: none;
+	}
+
+	//footer
+	.footer {
+		background-size: 250px auto;
 	}
 }
 
@@ -114,6 +183,29 @@
 		font-size: 35px;
 	}
 
+	//form
+	.form__header {
+		padding: 20px;
+	}
+
+	.form__title {
+		font-size: 25px;
+	}
+
+	//services
+	.services__inner{
+		padding-top: 50px;
+		padding-bottom: 10px;
+	}
+.services__main-title{
+	width: 100%;
+	bottom: auto;
+	right: auto;
+	top: 10px;
+	font-size: 60px;
+	text-align: center;
+}
+	//clients
 	.clients__list {
 		margin: 0 -15px;
 
@@ -127,5 +219,28 @@
 		width: 33.33333%;
 		margin-right: 0;
 		padding: 0 15px;
+	}
+
+	//mission
+	.mission__inner {
+		padding: 40px 20px;
+		margin-top: -10px;
+	}
+
+	.mission__title-main {
+		font-size: 40px;
+	}
+
+	.mission__title {
+		font-size: 18px;
+	}
+
+	.mission__subtitle {
+		font-size: 16px;
+	}
+
+	//footer
+	.footer {
+		background-position: left -120px bottom 0px, right -120px bottom 0px;
 	}
 }
