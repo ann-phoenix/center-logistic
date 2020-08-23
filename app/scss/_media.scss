@@ -304,8 +304,18 @@
 	.policy__text p {
 		margin-bottom: 15px;
 	}
-	.policy__text h3{
+
+	.policy__text h3 {
 		margin-bottom: 10px;
+	}
+
+	//title
+	.news__title-main,
+	.team__title,
+	.benefits__title,
+	.clients__title {
+		margin-bottom: 30px;
+		line-height: 1.2;
 	}
 
 }

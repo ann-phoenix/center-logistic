@@ -12,6 +12,7 @@
 	left: 0;
 	z-index: 1000;
 	width: 100%;
+	transition: background .3s linear;
 
 	&__inner {
 		display: flex;
