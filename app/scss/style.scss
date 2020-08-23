@@ -45,7 +45,8 @@
 	background-color: rgba(0, 0, 0, .9);
 
 }
-.burger{
+
+.burger {
 	display: none;
 	padding: 0;
 	background: none;
@@ -306,9 +307,10 @@
 //end clients
 //start benefits
 .benefits {
-	&__title{
+	&__title {
 		margin-bottom: 50px;
 	}
+
 	&__inner {
 		display: flex;
 	}
@@ -526,6 +528,7 @@
 		margin-bottom: 15px;
 		font-size: 17px;
 	}
+
 	&__date {
 		font-size: 14px;
 		line-height: 1;
@@ -580,18 +583,25 @@
 	height: 100%;
 	position: fixed;
 	background-color: rgba(0, 0, 0, .9);
-	top: 0;
+	top: 0px;
 	left: 0;
 	z-index: 2000;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	// display: block;
 	display: none;
+	overflow-y: auto;
+	padding: 30px 15px;
 
 	&__inner {
+		display: flex;
+		justify-content: center;
+		min-height: 100%;
+		align-items: center;
+	}
+
+	&__content {
 		background-color: #fff;
-		width: 400px;
+		max-width: 400px;
+		width: 100%;
 		padding: 25px;
 		position: relative;
 	}
@@ -679,11 +689,13 @@
 
 	&__inner {
 		display: flex;
+		margin: 0 -15px;
 	}
 }
 
 .main__col {
 	width: 50%;
+	padding: 0 15px;
 
 	&-item {
 		margin-bottom: 50px;
@@ -800,6 +812,7 @@
 		li {
 			margin-bottom: 20px;
 		}
+
 		img {
 			display: block;
 			max-width: 100%;

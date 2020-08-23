@@ -72,6 +72,8 @@ body {
   line-height: 1.4;
   color: #585858;
   background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // body.no-scroll{

@@ -26,7 +26,7 @@
               <a class="header__link" href="#">Наши клиенты</a>
               <a class="header__link" href="#">Преимущества</a>
               <a class="header__link" href="#">Наша команда</a>
-              <a class="header__link" href="#">Новости</a>
+              <a class="header__link" href="blog.html">Новости</a>
               <a class="header__link" href="#">Контакты</a>
             </nav>
             <button class="burger" type="button">
@@ -283,14 +283,14 @@
               <div class="news__text">Уважаемые клиенты! Сообщаем Вам, что с 18.08.20 г. открывается новое направление
                 перевозки сборных грузов по направлению Кострома - Москва - Кострома. Выход машины из г. Москва и г.
                 Кострома каждые вторник и пятницу.</div>
-                <time class="news__date" pubdate="04-08-2020 18:00">04/08/2020</time>
+              <time class="news__date" pubdate="04-08-2020 18:00">04/08/2020</time>
             </article>
             <article class="news__item">
               <h4 class="news__title"> <a href="#">Услуга "день в день"</a></h4>
               <div class="news__text">Мы можем забрать груз у отправителя, доставить груз со склада получателю в день
                 оформления заявки. А также мы выполним погрузо-разгрузочные работы и упакуем ваш груз для бережной
                 перевозки без дополнительных наценок за срочность. </div>
-                <time class="news__date" pubdate="30-07-2020 17:00">30/07/2020</time>
+              <time class="news__date" pubdate="30-07-2020 17:00">30/07/2020</time>
             </article>
           </div>
           <a class="news__link btn btn--orange btn--shadow" href="blog.html"> <span>Читать блог</span> </a>
@@ -319,61 +319,65 @@
   <!--modal-1-->
   <div class="modal" id="becomeClientModal">
     <div class="modal__inner">
-      <div class="modal__header">
-        <h4 class="modal__title">Вам нужно доставить груз? <br> Мы можем помочь!</h4>
-        <div class="modal__text">
-          <p>Заполните форму и мы Вам перезвоним!</p>
+      <div class="modal__content">
+        <div class="modal__header">
+          <h4 class="modal__title">Вам нужно доставить груз? <br> Мы можем помочь!</h4>
+          <div class="modal__text">
+            <p>Заполните форму и мы Вам перезвоним!</p>
+          </div>
         </div>
-      </div>
-      <form action="/" method="post">
-        <div class="form__group">
-          <input class="form__input input--dark input--user" type="text" class="form__input" placeholder="Имя">
-        </div>
-        <div class="form__group">
-          <input class="form__input input--dark input--phone" type="tel" placeholder="Телефон">
-        </div>
-        <div class="form__group">
-          <input class="form__input input--dark input--mail" type="text" class="form__input" placeholder="Почта">
-        </div>
-        <button class="form__btn btn 
+        <form action="/" method="post">
+          <div class="form__group">
+            <input class="form__input input--dark input--user" type="text" class="form__input" placeholder="Имя">
+          </div>
+          <div class="form__group">
+            <input class="form__input input--dark input--phone" type="tel" placeholder="Телефон">
+          </div>
+          <div class="form__group">
+            <input class="form__input input--dark input--mail" type="text" class="form__input" placeholder="Почта">
+          </div>
+          <button class="form__btn btn 
         btn--orange btn--block" type="submit">
-          <span>Жду звонка</span></button>
-      </form>
-      <div class="modal__footer">
-        <h4 class="modal__footer-title">Наши контакты</h4>
-        <address class="modal__contacts">
-          <p> г. Москва, ул. Электрозаводская, д. 27 </p>
-          <p>Телефон: <a href="tel:78002344595">+7 (800) 234 45 95</a> </p>
-          <p>Почта: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
-        </address>
+            <span>Жду звонка</span></button>
+        </form>
+        <div class="modal__footer">
+          <h4 class="modal__footer-title">Наши контакты</h4>
+          <address class="modal__contacts">
+            <p> г. Москва, ул. Электрозаводская, д. 27 </p>
+            <p>Телефон: <a href="tel:78002344595">+7 (800) 234 45 95</a> </p>
+            <p>Почта: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+          </address>
+        </div>
+        <button class="modal__close">
+          <img src="images/close.svg" alt="close">
+        </button>
       </div>
-      <button class="modal__close">
-        <img src="images/close.svg" alt="close">
-      </button>
     </div>
   </div>
   <!--modal-2-->
   <div class="modal" id="thanksModal">
     <div class="modal__inner">
-      <div class="modal__header">
-        <div class="modal__icon"> <img src="images/tick.svg" alt="">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__icon"> <img src="images/tick.svg" alt="">
+          </div>
+          <h4 class="modal__title"> Спасибо за вашу заявку</h4>
+          <div class="modal__text">
+            <p> Мы перезвоним вам в ближайшее время! </p>
+          </div>
         </div>
-        <h4 class="modal__title"> Спасибо за вашу заявку</h4>
-        <div class="modal__text">
-          <p> Мы перезвоним вам в ближайшее время! </p>
+        <div class="modal__footer">
+          <h4 class="modal__footer-title">Наши контакты</h4>
+          <address class="modal__contacts">
+            <p> г. Москва, ул. Электрозаводская, д. 27 </p>
+            <p>Телефон: <a href="tel:78002344595">+7 (800) 234 45 95</a> </p>
+            <p>Почта: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+          </address>
         </div>
+        <button class="modal__close">
+          <img src="images/close.svg" alt="close">
+        </button>
       </div>
-      <div class="modal__footer">
-        <h4 class="modal__footer-title">Наши контакты</h4>
-        <address class="modal__contacts">
-          <p> г. Москва, ул. Электрозаводская, д. 27 </p>
-          <p>Телефон: <a href="tel:78002344595">+7 (800) 234 45 95</a> </p>
-          <p>Почта: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
-        </address>
-      </div>
-      <button class="modal__close">
-        <img src="images/close.svg" alt="close">
-      </button>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
