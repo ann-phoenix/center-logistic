@@ -26,8 +26,8 @@
               <a class="header__link" href="#" data-scroll="#clients">Наши клиенты</a>
               <a class="header__link" href="#" data-scroll="#benefits">Преимущества</a>
               <a class="header__link" href="#" data-scroll="#team">Наша команда</a>
+              <a class="header__link" href="#" data-scroll="#mission">Миссия</a>
               <a class="header__link" href="#" data-scroll="#news">Новости</a>
-              <a class="header__link" href="#">Связаться с нами</a>
             </nav>
             <button class="burger" type="button">
               <img class="burger__icon" src="images/burger.svg" alt="">
@@ -164,7 +164,7 @@
               </div>
             </div>
           </div>
-          <button class="clients__btn btn btn--orange btn--shadow"> <span>Стать нашим клиентом</span></button>
+          <button class="clients__btn btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal"> <span>Стать нашим клиентом</span></button>
           <span class="clients__love">мы любим наших клиентов</span>
         </div>
       </section>
@@ -261,7 +261,7 @@
         </div>
       </section>
       <!--mission-->
-      <section class="mission section">
+      <section class="mission section" id="mission" data-scrollspy="#mission">
         <div class="container">
           <h2 class="mission__title-main">Наша миссия</h2>
           <div class="mission__inner">
@@ -269,7 +269,7 @@
             <h4 class="mission__subtitle">Забронируйте доставку груза сейчас и ваша работа станет намного проще</h4>
           </div>
           <div class="text-center">
-            <button class="mission__btn btn btn--orange btn--shadow" type="button"> <span>Стать клиентом</span></button>
+            <button class="mission__btn btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal" > <span>Стать клиентом</span></button>
           </div>
         </div>
       </section>
@@ -348,7 +348,7 @@
             <p>Почта: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
           </address>
         </div>
-        <button class="modal__close">
+        <button class="modal__close" type="button" data-modal-close="">
           <img src="images/close.svg" alt="close">
         </button>
       </div>

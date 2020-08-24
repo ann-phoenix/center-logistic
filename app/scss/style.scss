@@ -587,7 +587,6 @@
 	top: 0px;
 	left: 0;
 	z-index: 2000;
-	// display: block;
 	display: none;
 	overflow-y: auto;
 	padding: 30px 15px;
@@ -605,6 +604,10 @@
 		width: 100%;
 		padding: 25px;
 		position: relative;
+
+		transform: scale(.5);
+		opacity: 0;
+		transition: transform .5s ease-out, opacity .5s ease-out;
 	}
 
 	&__header {
@@ -674,7 +677,7 @@
 	}
 
 	&.show {
-		display: flex;
+		display: block;
 	}
 }
 
