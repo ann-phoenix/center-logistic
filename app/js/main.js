@@ -117,9 +117,9 @@ function modalClose(modal){
   }, 500);
  }
 
- /* Slider background images*/
+ /* Slider background images intro slider*/
 
- let introSlider = $("#introSlider");
+ let introSlider = $('#introSlider');
 
  introSlider.slick({
    infinite: true,
@@ -127,17 +127,36 @@ function modalClose(modal){
    arrows: false,
    slidesToScroll: 1,
    fade: true,
-   autoplay: true,
-   autoplaySpeed: 4000,
+   autoplay: false,
+   autoplaySpeed: 5000,
+   speed: 500,
   });
 
   $('#introSliderPrev').on('click', function() {
     introSlider.slick('slickPrev')
   });
-  
+
   $('#introSliderNext').on('click', function() {
     introSlider.slick('slickNext')
   });
 
+
+/* Clients slider */
+
+let clientsSlider = $('#clientsSlider');
+clientsSlider.slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  speed: 500,
+ });
+ $('#introSliderPrev').on('click', function() {
+   introSlider.slick('slickPrev')
+ });
+ $('#introSliderNext').on('click', function() {
+   introSlider.slick('slickNext')
+ });
  
 });
