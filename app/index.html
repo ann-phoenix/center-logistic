@@ -37,6 +37,17 @@
       </header>
       <!--intro-->
       <div class="intro" id="intro">
+        <div class="intro-slider" id="introSlider">
+          <div class="intro__item">
+            <img class="intro-slider__photo" src="images/intro-bg.jpg" alt="">
+          </div>
+          <div class="intro__item">
+            <img class="intro-slider__photo" src="images/intro-bg2.jpg" alt="">
+          </div>
+          <div class="intro__item">
+            <img class="intro-slider__photo" src="images/intro-bg3.jpg" alt="">
+          </div>
+        </div>
         <div class="container">
           <div class="intro__inner">
             <div class="form form--intro">
@@ -64,6 +75,10 @@
               <div class="intro__countries">Россия, Европа, СНГ, Азия</div>
               <h1 class="intro__title">
                 <span class="intro__title-amp">&amp;</span> Trans <br> Logistic</h1>
+            </div>
+            <div class="intro-slider__arrows">
+              <button class="intro-slider__btn intro-slider__btn--prev" id="introSliderPrev" type="button">Prev</button>
+              <button class="intro-slider__btn intro-slider__btn--next" id="introSliderNext" type="button">Next</button>
             </div>
           </div>
         </div>
@@ -164,7 +179,8 @@
               </div>
             </div>
           </div>
-          <button class="clients__btn btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal"> <span>Стать нашим клиентом</span></button>
+          <button class="clients__btn btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal">
+            <span>Стать нашим клиентом</span></button>
           <span class="clients__love">мы любим наших клиентов</span>
         </div>
       </section>
@@ -269,7 +285,8 @@
             <h4 class="mission__subtitle">Забронируйте доставку груза сейчас и ваша работа станет намного проще</h4>
           </div>
           <div class="text-center">
-            <button class="mission__btn btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal" > <span>Стать клиентом</span></button>
+            <button class="mission__btn btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal">
+              <span>Стать клиентом</span></button>
           </div>
         </div>
       </section>

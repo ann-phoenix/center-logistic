@@ -116,5 +116,28 @@ function modalClose(modal){
   modal.removeClass('show');
   }, 500);
  }
+
+ /* Slider background images*/
+
+ let introSlider = $("#introSlider");
+
+ introSlider.slick({
+   infinite: true,
+   slidesToShow: 1,
+   arrows: false,
+   slidesToScroll: 1,
+   fade: true,
+   autoplay: true,
+   autoplaySpeed: 4000,
+  });
+
+  $('#introSliderPrev').on('click', function() {
+    introSlider.slick('slickPrev')
+  });
+  
+  $('#introSliderNext').on('click', function() {
+    introSlider.slick('slickNext')
+  });
+
  
 });
