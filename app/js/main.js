@@ -106,7 +106,7 @@ $(function(){
       transform: 'scale(1)',
       opacity: '1',
     });
-  });
+  }, 200);
  });
 
  $('[data-modal-close]').on('click', function(event){
@@ -138,7 +138,7 @@ function modalClose(modal){
  setTimeout(function(){
   $('body').removeClass('no-scroll');
   modal.removeClass('show');
-  }, 500);
+  }, 200);
  }
 
  /* Slider background images intro slider*/
