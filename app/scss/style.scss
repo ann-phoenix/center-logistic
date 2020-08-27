@@ -44,7 +44,8 @@
 	}
 }
 
-.header--dark {
+.header--dark,
+body.show-header__menu .header {
 	background-color: rgba(0, 0, 0, .9);
 }
 
@@ -53,7 +54,47 @@
 	padding: 0;
 	background: none;
 	border: 0;
+	color: transparent;
+	position: relative;
+	width: 30px;
+	height: 23px;
+
+	&-line {
+		width: 30px;
+		height: 2px;
+		background-color: #fff;
+		display: block;
+		margin: 4px 0;
+		transition: transform	.3s ease-out;
+
+
+		&:nth-child(1) {
+			width: 20px;
+			margin-left: auto;
+		}
+	}
+
+	//burger cross
+	&.active &-line:nth-child(1),
+	&.active &-line:nth-child(3) {
+		display: none;
+	}
+	&.active &-line:nth-child(2),
+	&.active &-line:nth-child(4) {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform-origin: center;
+	}
+	&.active &-line:nth-child(2){
+		transform: rotate(45deg);
+	}
+	&.active &-line:nth-child(4){
+		transform: rotate(-45deg);
+	}
 }
+
+
 
 //end header
 //start intro
@@ -93,8 +134,8 @@
 		top: 0;
 		left: 0;
 	}
- 
-	.slick-slider{
+
+	.slick-slider {
 		display: none;
 	}
 
@@ -180,10 +221,6 @@
 	}
 
 }
-
-
-
-
 .form--intro {
 	position: relative;
 	bottom: -30px;
@@ -331,13 +368,8 @@
 
 	&__cards {
 		position: relative;
-
-		background: url('../images/loader.gif') 
-		no-repeat center;
+		background: url('../images/loader.gif') no-repeat center;
 		height: 400px;
-		
-
-
 		&:before,
 		&:after {
 			content: '';
@@ -457,7 +489,7 @@
 	}
 }
 
-.clients__cards.slick-initialized{
+.clients__cards.slick-initialized {
 	background: none;
 	height: auto;
 }

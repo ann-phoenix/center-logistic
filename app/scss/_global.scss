@@ -76,7 +76,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body.no-scroll{
+body.no-scroll,
+body.show-header__menu{
 overflow: hidden;
 }
 
