@@ -122,13 +122,10 @@ function modalClose(modal){
  let introSlider = $('#introSlider');
 
  introSlider.slick({
-   infinite: true,
    slidesToShow: 1,
-   arrows: false,
    slidesToScroll: 1,
+   arrows: false,
    fade: true,
-   autoplay: false,
-   autoplaySpeed: 5000,
    speed: 500,
   });
 

@@ -86,6 +86,10 @@
 	//intro
 	.intro {
 		margin-bottom: 0;
+
+		&-slider__arrows{
+			display: none;
+		}
 	}
 
 	.intro__inner {
@@ -253,6 +257,11 @@
 		width: 33.33333%;
 		margin-right: 0;
 		padding: 0 15px;
+	}
+
+	.clients__love{
+		margin-left: 0;
+		margin-top: 20px;
 	}
 
 	//mission

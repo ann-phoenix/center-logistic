@@ -58,12 +58,14 @@
 //end header
 //start intro
 .intro {
-	background: #000;
 	margin-bottom: 30px;
 	position: relative;
-	height: 100%;
+	// height: 100%;
+	background: #000 url('../images/loader.gif') no-repeat center;
+
 
 	&-slider {
+		display: none;
 		width: 100%;
 		height: 100%;
 		overflow: hidden;
@@ -91,10 +93,19 @@
 		top: 0;
 		left: 0;
 	}
+ 
+	.slick-slider{
+		display: none;
+	}
 
 	.slick-list,
 	.slick-track {
 		height: 100%;
+	}
+
+	.slick-initialized {
+		display: block;
+		background: #000;
 	}
 
 
@@ -321,6 +332,12 @@
 	&__cards {
 		position: relative;
 
+		background: url('../images/loader.gif') 
+		no-repeat center;
+		height: 400px;
+		
+
+
 		&:before,
 		&:after {
 			content: '';
@@ -358,15 +375,17 @@
 			width: 100%;
 		}
 
-		.slick-dots li{
+		.slick-dots li {
 			margin: 0 7px;
 		}
-		.slick-dots li.slick-active button{
+
+		.slick-dots li.slick-active button {
 			box-shadow: 0 0 0 5px rgba(0, 74, 242, .11);
 			background: #004af2;
 
 		}
-		.slick-dots button{
+
+		.slick-dots button {
 			display: block;
 			padding: 0;
 			background: none;
@@ -378,11 +397,11 @@
 			background-color: #c4c4c4;
 			cursor: pointer;
 		}
-
 	}
 
 	&__card {
 		padding: 0 10px;
+		display: none;
 	}
 
 	&__item-header {
@@ -436,6 +455,11 @@
 			text-indent: 10px;
 		}
 	}
+}
+
+.clients__cards.slick-initialized{
+	background: none;
+	height: auto;
 }
 
 .clients--map {
