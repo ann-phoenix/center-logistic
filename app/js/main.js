@@ -146,11 +146,14 @@ function modalClose(modal){
  let introSlider = $('#introSlider');
 
  introSlider.slick({
+   infinite: true,
    slidesToShow: 1,
    slidesToScroll: 1,
    arrows: false,
    fade: true,
-   speed: 500,
+   autoplay: true,
+   autoplaySpeed: 4000,
+   speed: 1000,
   });
 
   $('#introSliderPrev').on('click', function() {
@@ -171,7 +174,9 @@ clientsSlider.slick({
   slidesToScroll: 1,
   arrows: false,
   dots: true,
-  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 7000,
+  speed: 4000,
  });
  $('#introSliderPrev').on('click', function() {
    introSlider.slick('slickPrev')
@@ -184,7 +189,7 @@ clientsSlider.slick({
  AOS.init();
 
   AOS.init({
-   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+   disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
    initClassName: 'aos-init', // class applied after initialization
    animatedClassName: 'aos-animate', // class applied on animation

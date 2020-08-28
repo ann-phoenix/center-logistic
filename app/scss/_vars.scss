@@ -1,0 +1,25 @@
+$blue: #004af2;
+$dark: #2c2c2c;
+$red: #ff3e2f;
+$light-gray: #c4c4c4;
+$gray: #585858;
+
+@mixin pt400{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+@mixin pt700{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+}
+
+@mixin l700{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+@mixin l900{
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}

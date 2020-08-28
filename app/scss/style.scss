@@ -38,7 +38,7 @@
 		}
 
 		&.active {
-			background-color: #004af2;
+			background-color: $blue;
 		}
 
 	}
@@ -65,7 +65,7 @@ body.show-header__menu .header {
 		background-color: #fff;
 		display: block;
 		margin: 4px 0;
-		transition: transform	.3s ease-out;
+		transition: transform .3s ease-out;
 
 
 		&:nth-child(1) {
@@ -79,6 +79,7 @@ body.show-header__menu .header {
 	&.active &-line:nth-child(3) {
 		display: none;
 	}
+
 	&.active &-line:nth-child(2),
 	&.active &-line:nth-child(4) {
 		position: absolute;
@@ -86,10 +87,12 @@ body.show-header__menu .header {
 		top: 50%;
 		transform-origin: center;
 	}
-	&.active &-line:nth-child(2){
+
+	&.active &-line:nth-child(2) {
 		transform: rotate(45deg);
 	}
-	&.active &-line:nth-child(4){
+
+	&.active &-line:nth-child(4) {
 		transform: rotate(-45deg);
 	}
 }
@@ -203,14 +206,13 @@ body.show-header__menu .header {
 	&__title {
 		font-size: 110px;
 		line-height: .9;
-		font-family: 'Lato', sans-serif;
-		font-weight: 700;
+		@include l700;
 		position: relative;
 		color: rgba(225, 225, 225, .8);
 
 		&-amp {
 			font-size: 170px;
-			font-weight: 900;
+			@include l900;
 			line-height: 1;
 			position: absolute;
 			right: 0;
@@ -221,6 +223,7 @@ body.show-header__menu .header {
 	}
 
 }
+
 .form--intro {
 	position: relative;
 	bottom: -30px;
@@ -255,7 +258,7 @@ body.show-header__menu .header {
 		font-size: 90px;
 		line-height: 1;
 		color: rgba(44, 44, 44, 0.05);
-		font-weight: 700;
+		@include pt700;
 		position: absolute;
 		bottom: 12px;
 		right: 30px;
@@ -274,10 +277,9 @@ body.show-header__menu .header {
 
 	&__title {
 		font-size: 24px;
-		color: #2c2c2c;
-		font-weight: normal;
+		color: $dark;
 		line-height: 1.2;
-		font-weight: 700;
+		@include pt700;
 		margin-bottom: 20px;
 	}
 
@@ -292,7 +294,7 @@ body.show-header__menu .header {
 	}
 
 	&__link {
-		color: #004af2;
+		color: $blue;
 		display: inline-block;
 		font-size: 15px;
 		line-height: 21px;
@@ -301,7 +303,7 @@ body.show-header__menu .header {
 		transition: color .3s linear;
 
 		&:hover {
-			color: #ff3e2f;
+			color: $red;
 		}
 
 		&:after {
@@ -310,14 +312,14 @@ body.show-header__menu .header {
 			content: '';
 			width: 10px;
 			height: 2px;
-			background: #004af2;
+			background: $blue;
 			transition: width .3s linear;
 			margin-top: 5px;
 		}
 
 		&:hover::after {
 			width: 100%;
-			background: #ff3e2f;
+			background: $red;
 
 		}
 	}
@@ -370,6 +372,7 @@ body.show-header__menu .header {
 		position: relative;
 		background: url('../images/loader.gif') no-repeat center;
 		height: 400px;
+
 		&:before,
 		&:after {
 			content: '';
@@ -413,7 +416,7 @@ body.show-header__menu .header {
 
 		.slick-dots li.slick-active button {
 			box-shadow: 0 0 0 5px rgba(0, 74, 242, .11);
-			background: #004af2;
+			background: $blue;
 
 		}
 
@@ -426,7 +429,7 @@ body.show-header__menu .header {
 			border: 0;
 			border-radius: 50px;
 			color: transparent;
-			background-color: #c4c4c4;
+			background-color: $light-gray;
 			cursor: pointer;
 		}
 	}
@@ -438,7 +441,7 @@ body.show-header__menu .header {
 
 	&__item-header {
 		margin-bottom: 30px;
-		color: #2c2c2c;
+		color: $dark;
 		display: flex;
 		align-items: center;
 		position: relative;
@@ -473,7 +476,7 @@ body.show-header__menu .header {
 	&__name {
 		font-size: 18px;
 		line-height: 22px;
-		font-weight: 700;
+		@include pt700;
 	}
 
 	&__company {
@@ -537,13 +540,13 @@ body.show-header__menu .header {
 		}
 
 		&::before {
-			background-image: url('../images/start.svg');
+			background-image: url('../images/icons/start.svg');
 			top: -5px;
 
 		}
 
 		&::after {
-			background-image: url('../images/finish.svg');
+			background-image: url('../images/icons/finish.svg');
 			bottom: -35px
 		}
 	}
@@ -555,8 +558,8 @@ body.show-header__menu .header {
 	&__list-title {
 		font-size: 21px;
 		line-height: 1.2;
-		color: #2c2c2c;
-		font-weight: 700;
+		color: $dark;
+		@include pt700;
 		margin-bottom: 10px;
 	}
 
@@ -584,7 +587,7 @@ body.show-header__menu .header {
 
 
 	&__img {
-		background: #c4c4c4;
+		background: $light-gray;
 		box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16);
 		margin-bottom: 15px;
 	}
@@ -593,14 +596,14 @@ body.show-header__menu .header {
 	&__name {
 		font-size: 18px;
 		line-height: 1.2;
-		font-weight: 700;
-		color: #2c2c2c;
+		@include pt700;
+		color: $dark;
 		margin-bottom: 5px;
 	}
 
 	&__career,
 	&__link {
-		color: #585858;
+		color: $gray;
 	}
 
 	&__career {
@@ -657,7 +660,7 @@ body.show-header__menu .header {
 		}
 
 		&:before {
-			background-color: #004af2;
+			background-color: $blue;
 			right: 50%;
 		}
 
@@ -670,8 +673,8 @@ body.show-header__menu .header {
 	&__title {
 		font-size: 30px;
 		line-height: 1.2;
-		font-weight: 700;
-		color: #004af2;
+		@include pt700;
+		color: $blue;
 		margin-bottom: 10px;
 	}
 
@@ -705,8 +708,8 @@ body.show-header__menu .header {
 	&__title {
 		font-size: 20px;
 		line-height: 1.2;
-		color: #2c2c2c;
-		font-weight: 700;
+		color: $dark;
+		@include pt700;
 		margin-bottom: 15px;
 
 		a {
@@ -736,8 +739,8 @@ body.show-header__menu .header {
 //start footer
 .footer {
 	background-image:
-		url('../images/tire-track.svg'),
-		url('../images/tire-track-right.svg');
+		url('../images/icons/tire-track.svg'),
+		url('../images/icons/tire-track-right.svg');
 	background-repeat: no-repeat;
 	background-position: left 0 top 50%, right 0 top 50%;
 	text-align: center;
@@ -750,7 +753,7 @@ body.show-header__menu .header {
 		margin-bottom: 25px;
 		font-size: 14px;
 		line-height: 1.5;
-		font-weight: 700;
+		@include pt700;
 		font-style: normal;
 	}
 
@@ -761,7 +764,7 @@ body.show-header__menu .header {
 
 	&__link {
 		margin-right: 10px;
-		color: #004af2;
+		color: $blue;
 
 		&:hover {
 			text-decoration: underline;
@@ -815,13 +818,13 @@ body.show-header__menu .header {
 	&__title {
 		font-size: 24px;
 		line-height: 1.2;
-		color: #004af2;
+		color: $blue;
 		margin-bottom: 5px;
 	}
 
 	&__text {
 		font-size: 15px;
-		color: #2c2c2c;
+		color: $dark;
 	}
 
 	&__footer {
@@ -833,8 +836,8 @@ body.show-header__menu .header {
 
 	&__footer-title {
 		font-size: 18px;
-		font-weight: 700;
-		color: #2c2c2c;
+		@include pt700;
+		color: $dark;
 		margin-bottom: 10px;
 	}
 
@@ -907,12 +910,10 @@ body.show-header__menu .header {
 	&-title {
 		font-size: 18px;
 		line-height: 1.2;
-		color: #2c2c2c;
-		font-weight: 700;
-	}
+		color: $dark;
+		@include pt700;
 
-	&-text {
-		a:hover {
+		&:hover {
 			text-decoration: underline;
 		}
 	}
@@ -934,16 +935,20 @@ body.show-header__menu .header {
 		font-size: 18px;
 		line-height: 1.5;
 		max-width: 890px;
-		color: #585858;
+		color: $gray;
 
 		p {
 			margin-bottom: 20px;
 		}
 
 		h3 {
-			color: #2c2c2c;
-			font-weight: 700;
+			color: $dark;
+			@include pt700;
 			margin-bottom: 20px;
+		}
+
+		h6{
+			font-weight: normal;
 		}
 
 		ul,
@@ -958,8 +963,8 @@ body.show-header__menu .header {
 		li:before {
 			counter-increment: myCounter;
 			content: counter(myCounter);
-			color: white;
-			background: #004af2;
+			color: #fff;
+			background: $blue;
 			display: inline-block;
 			text-align: center;
 			margin: 5px 15px;
@@ -971,7 +976,7 @@ body.show-header__menu .header {
 
 	a:hover {
 		text-decoration: underline;
-		color: #004af2;
+		color: $blue;
 
 	}
 
@@ -993,16 +998,20 @@ body.show-header__menu .header {
 		font-size: 18px;
 		line-height: 1.5;
 		max-width: 890px;
-		color: #585858;
+		color: $gray;
 
 		p {
 			margin-bottom: 20px;
 		}
 
 		h3 {
-			color: #2c2c2c;
-			font-weight: 700;
+			color: $dark;
+			@include pt700;
 			margin-bottom: 20px;
+		}
+
+		h6{
+			font-weight: normal;
 		}
 
 		ul,
