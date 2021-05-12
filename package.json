@@ -22,6 +22,6 @@
   "dependencies": {
     "aos": "^2.3.4",
     "slick-carousel": "^1.8.1",
-    "swiper": "^6.1.2"
+    "swiper": "^6.5.1"
   }
 }
